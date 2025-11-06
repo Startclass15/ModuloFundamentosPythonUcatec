@@ -43,7 +43,18 @@ print(colores)
 #2.1.1.4.4. Eliminacion de todos los elementos de la lista (clear)
 colores.clear()
 print(colores)
+#2.1.1.4.5. Longitud de una lista len()
+print(len(numeros))
+print(len(colores))
+#2.2. Tuplas conjunto de elementos - inmutables ()
+codigos=(4534,4889,122,15156,63123)
+print(codigos)
 
+#2.3. Diccionarios (Conjunto de datos almacenados con pares de clave:valor) {}
+usuarios={
+    "nombre":"Kevin",
+    "contraseña":1454512,
+    "estado":True
+}
 
-#2.2. Tuplas
-#2.3. Diccionarios
+print(usuarios["nombre"])
