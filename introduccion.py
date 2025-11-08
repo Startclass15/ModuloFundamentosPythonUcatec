@@ -57,4 +57,71 @@ usuarios={
     "estado":True
 }
 
+#2.3.1. Obtencio de los valores  (clave)
 print(usuarios["nombre"])
+print(usuarios["nombre"], "Contraseña: ", usuarios["contraseña"])
+#2.3.2. Agregadado de elementos
+usuarios["nombre"]="Juan"
+print(usuarios["nombre"])
+#2.3.3. Actualizacion de datos
+usuarios.update(
+    {
+        "celular":65402398,
+        "correo":"abc@gmail.com"
+    }
+)
+print(usuarios["celular"])
+print(usuarios)
+#2.3.3. Eliminacion de elementos pop
+valor=usuarios.pop("estado")
+print(valor)
+print(usuarios)
+#valor2=usuarios.pop("edad")
+#print(valor2)
+del usuarios["celular"]
+print(usuarios)
+#Eliminacion de todos los elmentos el diccionario clear()
+usuarios.clear()
+print(usuarios)
+
+#2.4. DICCIONARIOS ANIDADOS
+baseDatos={
+    "usuarios":[
+        {
+            "id":1,
+            "nombre":"Kevin",
+            "contraseña":45415121
+        },
+        {
+            "id":2,
+            "nombre":"Juan",
+            "contraseña":1215842
+        },
+        {
+            "id":3,
+            "nombre":"Ana",
+            "contraseña":9815842
+        }
+
+    ],
+    "productos":[
+        {
+            "idProducto":1,
+            "nombreProducto":"producto1",
+            "precio":150
+        },
+         {
+            "idProducto":2,
+            "nombreProducto":"producto2",
+            "precio":600
+        },
+        {
+            "idProducto":2,
+            "nombreProducto":"producto3",
+            "precio":850
+        }
+
+    ]
+}
+
+print(baseDatos["productos"][-1])
