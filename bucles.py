@@ -10,7 +10,7 @@ for iterador in range(1,31,2):
 for pares in range(2,101,2):
     print(pares)
 
-for impares in range(1,101,2):
+for impares in range(101):
     print(impares)
 
 #Recorrido por listas o tuplas
@@ -23,5 +23,26 @@ for c in colores:
 #Salida: 1x5=5
 #        2x5=10
 
+tablaN=int(input("Ingrese el numero de la tabla que desesa ver. "))
+for tabla in range(1,11,1):
+    print(f"{tabla}x{tablaN}={tabla*tablaN}")
 
 #2. Bucles Condicionados while
+# sintaxis
+# while condicion:
+#    instruccion
+#1. Contador (incremento), 2. Condicional,  3.Salida
+
+contador=1
+while contador<=100:
+    print(contador)
+    contador +=1
+
+#Pares 
+par=2
+
+while par<=100:
+    print(par)
+    par+=2
+
+
