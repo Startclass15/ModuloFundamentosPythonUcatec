@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 categorias=["A","B","C","D","E","F"]
 ganancias=[50,150,20,70,550,12]
 
-
 plt.bar(categorias,ganancias,color="orange")
 plt.title("Pyplot")
 plt.xlabel("Eje de categorias")
