@@ -72,7 +72,6 @@ plt.show()
 
 
 
-
 #Paso 5. Prueba del modelo (prediccion) (predict)
 #Simulacion de Boliva 4 - Peru 1
 prediccion=modelo.predict(pTesteo)
